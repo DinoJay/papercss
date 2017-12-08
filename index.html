@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <title>PaperCSS · the less formal CSS framework</title>
 
   <meta name="description" content="The less formal CSS framework.">
@@ -45,7 +45,6 @@
       <h3>Summary:</h3>
 
       <ul class="summary">
-        <li><a href="#flexbox">Flexbox</a></li>
         <li><a href="#typography">Typography</a></li>
         <li><a href="#buttons">Buttons</a></li>
         <li><a href="#forms">Forms</a></li>
@@ -61,148 +60,6 @@
       </ul>
     </div>
 
-    <div id="flexbox" class="section">
-      <h2>Flexbox</h2>
-      <h4>Flexgrid</h4>
-      <p>The flexgrid is a grid system that supports up to 12 columns per row. Because it uses flexbox (rather than just %widths), we also get the benefit of the fun parts of flexbox like alignment in more complex ways than normal.</p>
-      <div class="demo">
-        <div class="row">
-          <div class="col-4 col">col-4 col</div>
-          <div class="col-4 col">col-4 col</div>
-          <div class="col-4 col">col-4 col</div>
-        </div>
-        <div class="row">
-          <div class="col-3 col">col-3 col</div>
-          <div class="col-9 col">col-9 col</div>
-        </div>
-        <div class="row">
-          <div class="sm-6 md-8 lg-10 col">sm-6 md-8 lg-10 col</div>
-          <div class="sm-6 md-4 lg-2 col">sm-6 md-4 lg-2 col</div>
-        </div>
-        <div class="row">
-          <div class="sm-5 col">sm-5 col</div>
-          <div class="col-fill col">col-fill col</div>
-          <div class="col-fill col">col-fill col</div>
-        </div>
-        <div class="row">
-          <div class="sm-4 col">Aligned</div>
-          <div class="sm-4 col">Left (default)</div>
-        </div>
-        <div class="row flex-right">
-          <div class="sm-4 col">Aligned</div>
-          <div class="sm-4 col">Right (flex-right)</div>
-        </div>
-        <div class="row flex-center">
-          <div class="sm-4 col">Aligned</div>
-          <div class="sm-4 col">Center (flex-center)</div>
-        </div>
-        <div class="row flex-edges">
-          <div class="sm-4 col">Aligned</div>
-          <div class="sm-4 col">to edges (flex-edges)</div>
-        </div>
-        <div class="row flex-spaces">
-          <div class="sm-4 col">Aligned</div>
-          <div class="sm-4 col">to be evenly spaced (flex-spaces)</div>
-        </div>
-        <div class="row flex-top">
-          <div class="sm-4 col">Aligned top</div>
-          <div class="sm-4 col">Aligned top</div>
-          <div class="sm-4 col">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lorem lectus, lobortis a nibh non, luctus luctus erat posuere. Curabitur ac turpis aliquam, malesuada elit suscipit, blandit dolor.
-          </div>
-        </div>
-        <div class="row flex-middle">
-          <div class="sm-4 col">Aligned middle</div>
-          <div class="sm-4 col">Aligned middle</div>
-          <div class="sm-4 col">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lorem lectus, lobortis a nibh non, luctus luctus erat posuere. Curabitur ac turpis aliquam, malesuada elit suscipit, blandit dolor.
-          </div>
-        </div>
-        <div class="row flex-bottom">
-          <div class="sm-4 col">Aligned bottom</div>
-          <div class="sm-4 col">Aligned bottom</div>
-          <div class="sm-4 col">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lorem lectus, lobortis a nibh non, luctus luctus erat posuere. Curabitur ac turpis aliquam, malesuada elit suscipit, blandit dolor.
-          </div>
-        </div>
-        <div class="row">
-          <div class="sm-3 col align-bottom">Align bottom</div>
-          <div class="sm-3 col align-middle">Align middle</div>
-          <div class="sm-3 col align-top">Align top</div>
-          <div class="sm-3 col">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lorem lectus, lobortis a nibh non, luctus luctus erat posuere. Curabitur ac turpis aliquam, malesuada elit suscipit, blandit dolor.
-          </div>
-        </div>
-      </div>
-      <div class="docs">
-          <pre>
-&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;col-4 col&quot;&gt;col-4 col&lt;/div&gt;
-  &lt;div class=&quot;col-4 col&quot;&gt;col-4 col&lt;/div&gt;
-  &lt;div class=&quot;col-4 col&quot;&gt;col-4 col&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;col-3 col&quot;&gt;col-3 col&lt;/div&gt;
-  &lt;div class=&quot;col-9 col&quot;&gt;col-9 col&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;sm-6 md-8 lg-10 col&quot;&gt;sm-6 md-8 lg-10 col&lt;/div&gt;
-  &lt;div class=&quot;sm-6 md-4 lg-2 col&quot;&gt;sm-6 md-4 lg-2 col&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;sm-5 col&quot;&gt;sm-5 col&lt;/div&gt;
-  &lt;div class=&quot;col-fill col&quot;&gt;col-fill col&lt;/div&gt;
-  &lt;div class=&quot;col-fill col&quot;&gt;col-fill col&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;sm-4 col&quot;&gt;Aligned&lt;/div&gt;
-  &lt;div class=&quot;sm-4 col&quot;&gt;Left (default)&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row flex-right&quot;&gt;
-  &lt;div class=&quot;sm-4 col&quot;&gt;Aligned&lt;/div&gt;
-  &lt;div class=&quot;sm-4 col&quot;&gt;Right (flex-right)&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row flex-center&quot;&gt;
-  &lt;div class=&quot;sm-4 col&quot;&gt;Aligned&lt;/div&gt;
-  &lt;div class=&quot;sm-4 col&quot;&gt;Right (flex-right)&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row flex-edges&quot;&gt;
-  &lt;div class=&quot;sm-4 col&quot;&gt;Aligned&lt;/div&gt;
-  &lt;div class=&quot;sm-4 col&quot;&gt;to edges (flex-edges)&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row flex-spaces&quot;&gt;
-  &lt;div class=&quot;sm-4 col&quot;&gt;Aligned&lt;/div&gt;
-  &lt;div class=&quot;sm-4 col&quot;&gt;to be evenly spaced (flex-spaces)&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row flex-top&quot;&gt;
-  &lt;div class=&quot;sm-6 col&quot;&gt;Aligned top&lt;/div&gt;
-  &lt;div class=&quot;sm-6 col&quot;&gt;
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lorem lectus, lobortis a nibh non, luctus luctus erat posuere. Curabitur ac turpis aliquam, malesuada elit suscipit, blandit dolor.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row flex-middle&quot;&gt;
-  &lt;div class=&quot;sm-6 col&quot;&gt;Aligned middle&lt;/div&gt;
-  &lt;div class=&quot;sm-6 col&quot;&gt;
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lorem lectus, lobortis a nibh non, luctus luctus erat posuere. Curabitur ac turpis aliquam, malesuada elit suscipit, blandit dolor.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row flex-bottom&quot;&gt;
-  &lt;div class=&quot;sm-6 col&quot;&gt;Aligned bottom&lt;/div&gt;
-  &lt;div class=&quot;sm-6 col&quot;&gt;
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lorem lectus, lobortis a nibh non, luctus luctus erat posuere. Curabitur ac turpis aliquam, malesuada elit suscipit, blandit dolor.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;sm-3 col align-bottom&quot;&gt;Align bottom&lt;/div&gt;
-  &lt;div class=&quot;sm-3 col align-middle&quot;&gt;Align middle&lt;/div&gt;
-  &lt;div class=&quot;sm-3 col align-top&quot;&gt;Align top&lt;/div&gt;
-  &lt;div class=&quot;sm-3 col&quot;&gt;
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lorem lectus, lobortis a nibh non, luctus luctus erat posuere. Curabitur ac turpis aliquam, malesuada elit suscipit, blandit dolor.
-  &lt;/div&gt;
-&lt;/div&gt;
-</pre>
-        </div>
-    </div>
     <div id="typography" class="section">
       <h2>Typography</h2>
       <p>How pretty is the text?</p>
@@ -632,7 +489,7 @@ function add(x, y) {
 &lt;button popover="Popover on top" popover-position="top"&gt;Popover on top and on a button!&lt;/button&gt;</pre>
       </div>
     </div>
-          
+
     <div id="colors" class="section">
       <h2>Cards</h2>
       <h4>Full card example</h4>
