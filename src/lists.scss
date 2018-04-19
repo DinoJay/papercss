@@ -13,9 +13,9 @@ ol {
         }
     }
 }
-.li-bullet(@char) {
+@mixin () {
     li:before {
-        content: @char;
+        content: $char;
     }
 }
 ul {

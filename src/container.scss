@@ -1,23 +1,23 @@
-@large-screen: ~"screen and (max-width: 1200px)";
-@medium-screen: ~"screen and (max-width: 992px)";
-@small-screen: ~"screen and (max-width: 768px)";
-@xsmall-screen: ~"screen and (max-width: 480px)";
+$large-screen: ~"screen and (max-width: 1200px)";
+$medium-screen: ~"screen and (max-width: 992px)";
+$small-screen: ~"screen and (max-width: 768px)";
+$xsmall-screen: ~"screen and (max-width: 480px)";
 
 .container {
     width: 100%;
     max-width: 960px;
     position: relative;
     margin: 0 auto;
-    @media @medium-screen {
+    @media $medium-screen {
         width: 85%;
     }
-    @media @xsmall-screen {
+    @media $xsmall-screen {
         width: 90%;
     }
 }
-.hr-after() {
+@mixin () {
     text-align: center;
-    color: lighten(@primary, 30%);
+    color: lighten($primary, 30%);
     display: block;
     content: "~~~";
     position: relative;
@@ -38,7 +38,7 @@ hr:after {
     top: -.75rem;
 }
 .paper {
-    border: 1px solid @primary-light;
+    border: 1px solid $primary-light;
     background-color: #FFF;
     padding: 2rem;
     margin-top: 1rem;
@@ -46,7 +46,7 @@ hr:after {
     -webkit-box-shadow: -1px 5px 35px -9px hsla(0,0%,0%,.2);
     -moz-box-shadow: -1px 5px 35px -9px hsla(0,0%,0%,.2);
     box-shadow: -1px 5px 35px -9px hsla(0,0%,0%,.2);
-    @media @xsmall-screen {
+    @media $xsmall-screen {
         padding: 1rem;
         width: 100%;
         margin-top: 0;

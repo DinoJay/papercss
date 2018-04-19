@@ -12,12 +12,12 @@ table {
         padding: 8px;
         line-height: 1.5;
         vertical-align: top;
-        border-top: 1px dashed lighten(@primary, 60%);
+        border-top: 1px dashed lighten($primary, 60%);
     }
     &.table-hover tbody tr:hover {
-        color: @secondary;
+        color: $secondary;
     }
     &.table-alternating tbody tr:nth-of-type(even) {
-        color: lighten(@primary, 25%);
+        color: lighten($primary, 25%);
     }
 }

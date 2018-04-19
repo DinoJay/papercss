@@ -1,5 +1,5 @@
 .border {
-    border: 2px solid @primary;
+    border: 2px solid $primary;
 }
 .border, .border-1, .child-borders > *:nth-child(6n+1) {
     border-top-left-radius: 255px 15px;
@@ -38,7 +38,7 @@
     border-bottom-left-radius: 15px 225px;
 }
 .child-borders > * {
-    border: 2px solid @primary;
+    border: 2px solid $primary;
 }
 .border-white {
     border-color: #FFF;
@@ -53,11 +53,11 @@
     border-width: 5px;
 }
 
-.make-border-color-classes(@i: length(@colors)) when (@i > 0) {
-    .make-border-color-classes(@i - 1);
-    @color: extract(@colors, @i);
-    .border-@{color} {
-        border-color: @@color;
+@mixin () {
+    .make-border-color-classes($i - 1);
+    $color: extract($colors, $i);
+    .border-${color} {
+        border-color: $$color;
     }
 }
 
