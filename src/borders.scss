@@ -53,12 +53,12 @@
     border-width: 5px;
 }
 
-@mixin () {
-    .make-border-color-classes($i - 1);
-    $color: extract($colors, $i);
-    .border-${color} {
-        border-color: $$color;
-    }
-}
-
-.make-border-color-classes();
+// @mixin () {
+//     .make-border-color-classes($i - 1);
+//     $color: extract($colors, $i);
+//     .border-${color} {
+//         border-color: $$color;
+//     }
+// }
+//
+// .make-border-color-classes();
