@@ -16,16 +16,3 @@ $muted-light: lighten($muted, 35%);
 $white-dark: rgba(0, 0, 0, .03);
 
 $colors: primary, secondary, success, warning, danger, muted;
-
-@mixin () {
-    .make-text-color-classes($i - 1);
-    $color: extract($colors, $i);
-    .text-${color} {
-        color: $$color;
-    }
-    .background-${color}{
-        background-color: ~"${${color}-light}";
-    }
-}
-
-.make-text-color-classes();
