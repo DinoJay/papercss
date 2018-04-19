@@ -53,7 +53,7 @@
     border-width: 5px;
 }
 
-@mixin () {
+@mixin () {
     .make-border-color-classes($i - 1);
     $color: extract($colors, $i);
     .border-${color} {
